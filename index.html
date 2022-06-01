@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>One Nanny</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -16,23 +18,23 @@
     <Header>
         <img class="logo" src="./image/SvgjsG4043.png" alt="logo one Nanny">
         <nav>
-            <ul class="menu">
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./pages/acercaNosotros.html">Acerca de nosotros</a>
-                </li>
-                <li>
-                    <a href="./pages/servicios.html">Nuestros Servicios</a>
-                </li>
-                <li>
-                    <a href="./pages/galeria.html">Galeria</a>
-                </li>
-                <li>
-                    <a href="./pages/contactanos.html">Contactanos</a>
-                </li>
-            </ul>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/acercaNosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/contactanos.html">Contactanos</a>
+            </li>    
+        </ul>
         </nav>
     </Header>
 
@@ -45,7 +47,7 @@
                 la escuela o simplemente estando allí para guiarlos a medida que se desarrollan y crecen. Nuestras
                 niñeras realmente hacen de tu casa un hogar dejándote tener tiempo para lo que es realmente importante
                 después de un largo día, tus hijos!”</p>
-        </div>
+        </div><br>
         <section class="container">
             <div class="container__pictures">
                 <img class="pictureA" src="./image/Mask group.png" alt="Ninos jugando con dados">
@@ -54,14 +56,14 @@
                 <img class="pictureD" src="./image/Mask group-1.png" alt="nina leyendo">
                 <img class="pictureE" src="./image/Mask group-3.png" alt="Nina con plantas">
                 <article class="info__pictures">
-                    <h3>Contamos con diferentes servicios</h3>
+                    <h3 class="container__title">Contamos con diferentes servicios</h3>
                     <p>Cada familia tiene necesidades individuales y un estilo de vida diferente: nuestro objetivo es
                         satisfacerlas con la mayor facilidad posible. Ya sea que esté buscando una niñera a tiempo
                         completo o parcial, una niñera confiable de última hora, una niñera temporal durante su visita o
                         una niñera de viaje, tenemos un servicio para usted.</p>
                 </article>
             </div>
-        </section>
+        </section><br>
         <div class="seleccion">
             <h3 class="seleccion__title">Nuestro proceso de seleccion</h3>
             <ol>
@@ -93,6 +95,7 @@
 <script>
     AOS.init();
   </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>

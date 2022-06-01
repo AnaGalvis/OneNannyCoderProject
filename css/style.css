@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Arapey&family=Cormorant+Garamond:ital,wght@1,300&family=Water+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Antic+Slab&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
 :root {
     /* Colors */
     --primary: #ff8cc6;
     --Secunday: #ffdde2;
-    --text-color: #2b2b2b;
+    --text-color:#474849 ;
 
     /* Font-Family*/
     --font-title: 'Amatic SC', cursive;
-    --font-principal: 'Cormorant Garamond', serif;
+    --font-principal: 'Ibarra Real Nova', serif, light;
 
     /* Font sizes */
 
@@ -22,6 +22,7 @@
 /* Normalize */
 
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,7 +30,10 @@
 
 body {
     font-family: var(--font-principal);
-    font-size: 16px
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: lighter;
+
 }
 
 a {
@@ -54,9 +58,11 @@ header {
     font-size: var(--text-xsmall);
 }
 
-nav {
-    flex-basis: 70%;
+nav{
+    flex-basis: 75%%;
+    gap: 0.5em;
 }
+
 
 .logo {
     flex-basis: 20%;
@@ -66,24 +72,27 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-
-ul {
     list-style: none;
-
 }
 
 ul li a {
-    color: black;
+    color: black !important;
     text-decoration: none;
     font-size: var(--text-small);
-    transition: all 1s ease-in-out;
-    border-bottom: solid 3px white;
-    padding: 0.5rem;
+    transition: all 0.6s ease-in-out;
+    border-bottom: solid 2px white;
+    padding: 2rem;
     font-family: var(--font-title);
+    flex-wrap: wrap;
 }
 ul li a:hover{
-    border-bottom-color: #545863;
+    border-bottom-color: var(--primary);
+    font-size: var(--text-midium);
+    color: #ff8cc6;
+}
+.justify-content-end {
+    justify-content: flex-end!important;
+    margin-right: 7rem;
     font-size: var(--text-midium);
 }
 
@@ -105,14 +114,17 @@ footer h2 {
     text-align: start;
     font-size: var(--text-small);
 }
-footer p {
-    font-size: var(--text-xsmall);
+footer p a {
+    font-size: var(--text-small);
     transition: all 0.6s ease-in-out;
 
 }
-footer p:hover{
-    font-size: var(--text-small);
-    
+footer p a {
+    color: #474849;
+}
+footer p a:hover{
+    font-size: var(--text-large);
+    color: #474849;
 
 }
 
@@ -128,29 +140,27 @@ h1 {
     font-family: var(--font-title);
     text-align: center;
     font-size: var(--text-large);
+    padding: .625rem 1.25rem;
+    margin: .625rem;
+    color: #ff8cc6 !important;
     font-weight: lighter;
+}
+h2{
+    font-family: var(--font-title);
+    text-align: center;
+    font-size: var(--text-midium);
     padding: .625rem 1.25rem;
     margin: .625rem;
     color: #ff8cc6;
+    font-weight: lighter;
 }
-
 .introduccion {
-    background-image: url(../image/egg.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 20%;
     font-size: var(--text-small);
     text-align: center;
     margin: 1.25em;
-
 }
 
 /* Grilla Index */
-
-.container {
-    padding: 5rem 0;
-    overflow: scroll;
-}
 
 .container__pictures {
     display: grid;
@@ -176,13 +186,11 @@ h1 {
 .pictureC {
     grid-column: 1/2;
     grid-row: 2/3;
-
 }
 
 .pictureD {
     grid-column: 2/4;
     grid-row: 2/3;
-
 }
 
 .pictureE {
@@ -201,7 +209,12 @@ h1 {
     padding: 1rem;
     background-color: white;
 }
-
+.container__title{
+    font-size: var(--text-midium);
+    font-family: var(--font-title);
+    font-weight: lighter;
+    color: #ff8cc6;
+}
 /* End Grilla Index */
 
 .seleccion {
@@ -226,6 +239,7 @@ h1 {
     text-align: left;
     border-radius: 1rem;
 }
+
 /* Index end */
 
 /* Acerca de nosotros Main */
@@ -257,15 +271,55 @@ h1 {
     font-family: var(--font-title);
 
 }
-table {
-    width: 95%;
-    align-items: center;
+.table__horario {
     font-size: var(--text-midium);
     padding: .3rem;
     border: 3px solid #ff8cc6;
-    padding: 1.25rem;
-    margin: 1.875rem;
+    padding: 0.25rem;
+    margin:0 auto;
+}
+ 
+.table__horario, tr, th {
+    padding: 0.1em;
+    border: solid #ff8cc6 3px !important;
+    align-items: center;
+}
+.table__horario, tr, td{
+    padding: 1em;
+    border: solid #ff8cc6 3px !important;
+    align-items: center;
+    width: 80%;
+}
 
+.testimonios{
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: var(--text-midium);
+    font-family: var(--font-title);
+    color: #ff8cc6;
+    text-align: center;
+    font-weight: lighter;
+}
+.carousel{
+    margin: auto;
+    padding: 0 3rem;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-principal);
+    font-size: var(--text-small);   
+}
+button{
+    background-color: #ff8cc6 !important;
+}
+button .carousel-control-prev, .carousel-control-next{
+    background-color: transparent !important;
+}
+button .carousel-control-next, .carousel-control-prev{
+    background-color: transparent !important;
+
+}
+.carousel-indicators [data-bs-target] {
+    background-color: #ff8cc6;
 }
 
 /* acerca de nosotros end */
@@ -278,6 +332,7 @@ table {
     font-size: var(--text-small);
     margin: 0 1em;
     overflow: scroll;
+    font-weight: lighter;
     
 }
 
@@ -294,11 +349,12 @@ table {
     backdrop-filter: blur( 12px );
     border-radius: 10px;
     width: 80%;
-    transition-duration:6s;
+    transition-duration: 2s;
 
 }
 .servicio h2{
     font-family: var(--font-title);
+
 }
 
 .servicio img {
@@ -308,16 +364,14 @@ table {
     width:100%
 
 }
-.servicio img:hover{
-    width: 60%;
-    transition: all 2s ease-in-out;
-}
+
 /* acerca de nosotros end*/
 /* gallery */
 .gallery__text {
     font-size: var(--text-small);
     text-align: center;
     margin: 1.25em;
+    font-family: var(--font-principal);
 }
 
 .container__gallery {
@@ -380,9 +434,18 @@ form {
     margin: 3% 20%;
     padding: 2.5em 2.5rem 1.25rem 2.5rem;
     backdrop-filter: blur(2px); background-color: rgba(255, 255, 255, 1); border-radius: 29px; box-shadow: -35px 35px 68px 0px rgba(255, 221, 226, 0.5), inset 5px -5px 16px 0px rgba(255, 221, 226, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
-
 }
-
+ form input.btn.btn-primary{
+    --bs-btn-bg:#ffdde2;
+    --bs-btn-border-color: #ff8cc6;
+    --bs-btn-hover-bg: #ff8cc6;
+    --bs-btn-hover-border-color: #ffdde2 ;
+    --bs-btn-focus-shadow-rgb:(255,182,193);
+    --bs-btn-active-bg: #ff8cc6 ;
+    --bs-btn-active-border-color: #ff8cc6 ;
+    --bs-btn-disabled-bg: #ff8cc6 ;
+    --bs-btn-disabled-border-color: #ff8cc6 ;
+} 
 /*end of conctatanos*/
 
 /*Mis Media Queries*/
@@ -408,7 +471,11 @@ form {
         align-items: center;
         gap: 5%;
     }
-    
+    .justify-content-end {
+        margin: 0 auto;
+        font-size: var(--text-small);
+        
+    }
     .container{
         padding: 1em;
     }
@@ -466,6 +533,7 @@ form {
     .titulo__horario{
         padding: 10px;
     }
+    
 
 /* gallery */
 
@@ -509,15 +577,29 @@ form {
     }
 
 }
+@media screen and (max-width: 600px) {
+    .table__horario{
+        font-size: var(--text-xsmall);
+    }
 
 /* Media Queries for mobile 480px-320px*/
 
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 500px) {
     body{
-        font-size: x-small;
+        font-size:var(--text-xsmall);
     }
-    
+    .justify-content-end {
+        font-size: 1.2em;
+        width: 100%;
+    }
+    .nav-link{
+        padding:0 0.4rem !important;
+    }
+    nav{
+        width: 100%;
+    }
+   
 /* Inicio*/
     .container{
         padding: 1rem;
@@ -547,7 +629,11 @@ form {
         padding: .5rem;
     }
     
+/* Footer */
 
+    footer h2{
+        font-size: var(--text-xsmall);
+    }
 /* Acerca de nosotros */
     table{
         margin: auto;
@@ -586,4 +672,4 @@ form {
         margin: .25rem;
         padding: 1rem;
     }
-}
+ }
