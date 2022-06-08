@@ -1,0 +1,69 @@
+.parrafo__nosotros {
+    text-align: center;
+    font-size: $text-small;
+    padding: 1.25rem;
+    margin: 1.25rem;
+}
+
+.horario {
+    background-image: url(../image/website-content-sections.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20%;
+    font-weight: bold;
+    opacity: 0.8;
+    font-family: $font-title;
+
+    &__titulo {
+        text-align: center;
+        font-size: $text-large;
+        font-weight: lighter;
+        padding: 1.25em;
+        margin: 10px;
+        color: #ff8cc6;
+        font-family: $font-title;
+    }
+    &__table {
+        font-size: $text-midium;
+        padding: .3rem;
+        border: 3px solid #ff8cc6;
+        padding: 0.25rem;
+        margin:0 auto;
+        &, tr, th, td{
+            padding: 0.1em;
+            border: solid #ff8cc6 3px !important;
+            align-items: center;
+        }
+    }
+}
+
+
+.testimonios{
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: $text-midium;
+    font-family: $font-title;
+    color: #ff8cc6;
+    text-align: center;
+    font-weight: lighter;
+}
+.carousel{
+    margin: auto;
+    padding: 0 3rem;
+    align-items: center;
+    text-align: center;
+    font-family:$font-principal;
+    font-size: $text-small;   
+}
+button{
+    background-color: #ff8cc6;
+    & .carousel-control-prev, .carousel-control-next{
+    background-color: transparent;
+    }
+    & .carousel-control-next, .carousel-control-prev{
+    background-color: transparent;
+    }
+}
+.carousel-indicators [data-bs-target] {
+    background-color: #ff8cc6;
+}

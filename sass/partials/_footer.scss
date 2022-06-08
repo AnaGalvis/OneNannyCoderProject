@@ -1,0 +1,26 @@
+footer {
+    margin: 3% 0 0;
+    padding: 5.5%;
+    font-family: $font-title;
+    text-align: center;
+    font-weight: lighter;
+    background-image: url(../image/footeronenanny.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+
+    & h2 {
+        text-align: start;
+        font-size: $text-midium;
+    }
+    & p a {
+        font-size: $text-midium;
+        transition: all 0.6s ease-in-out;
+        color: #474849;
+
+        &:hover{
+            font-size: $text-large;
+            color: #474849;
+        }
+    }
+}

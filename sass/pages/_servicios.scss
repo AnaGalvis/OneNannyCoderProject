@@ -1,0 +1,40 @@
+.nuestros__servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: $text-small;
+    margin: 0 1em;
+    overflow: scroll;
+    font-weight: lighter;
+    
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $text-xsmall;
+    margin:  0.5em;
+    border: 2em;
+    padding: 3em;
+    background: rgba( 255, 221, 226, 0.25 );
+    box-shadow: 0 8px 32px 0 rgb(255, 140, 198);
+    backdrop-filter: blur( 12px );
+    border-radius: 10px;
+    width: 80%;
+    transition-duration: 2s;
+
+    &__title{
+        font-size: $text-small;
+        font-family: $font-title;
+    }
+
+    & img {
+        width: 50%;
+    }
+
+    &:hover{
+        width:100%
+    }
+}

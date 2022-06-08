@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 67.5%;
+}
+
+body {
+    font-family: $font-principal;
+    font-size: $text-small;
+    color: $text-color;
+    font-weight: lighter;
+
+}
+
+a {
+    text-decoration: none;
+    font-family:$font-title;
+    color: $text-color;
+    font-size: $text-small;
+}
