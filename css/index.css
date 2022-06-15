@@ -3,7 +3,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Antic+Slab&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
 /* Misc */
-/* Colors */
+primary {
+  color: #ff8cc6; }
+
+Secunday {
+  color: #ffdde2; }
+
+text-color {
+  color: #474849; }
+
 /* Font-Family*/
 /* Font sizes */
 /* Spacing */
@@ -80,13 +88,13 @@ footer {
   background-size: 100%; }
   footer h2 {
     text-align: start;
-    font-size: 1.7em; }
+    font-size: 2em; }
   footer p a {
-    font-size: 1.7em;
+    font-size: 2em;
     transition: all 0.6s ease-in-out;
     color: #474849; }
     footer p a:hover {
-      font-size: 2em;
+      font-size: 3em;
       color: #474849; }
 
 /* Pages */
@@ -95,7 +103,7 @@ main {
   font-family: "Ibarra Real Nova", serif, light;
   margin: 0 auto;
   max-width: 1200px; }
-  main .mis__titulos {
+  main .mis__titulos, main .seleccion__title {
     font-family: "Amatic SC", cursive;
     text-align: center;
     font-size: 2em;
@@ -165,9 +173,7 @@ main {
   border: 3rem;
   padding: 2rem; }
   .seleccion__title {
-    text-align: center;
-    font-size: 2em;
-    font-family: "Amatic SC", cursive; }
+    padding: 0.5rem; }
   .seleccion__paso {
     background: #ffdde2;
     background: radial-gradient(circle, #ffdde2 0%, #ff8cc6 100%);
@@ -181,24 +187,25 @@ main {
 .question {
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100%; }
   .question__enlace {
     position: absolute;
-    font-size: 70px;
+    font-size: 80px;
     font-family: "Amatic SC", cursive;
     text-align: center;
     z-index: 1;
     display: flex;
     font-weight: bolder;
-    background-color: rgba(255, 255, 255, 0.5);
     color: black; }
   .question__enlace:hover {
     color: black;
     text-decoration: underline;
     border: black solid 2px;
-    padding: 1em; }
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.5); }
   .question__img {
     width: 95%;
     margin: 0 auto; }
@@ -215,7 +222,6 @@ main {
   background-position: right;
   background-size: 20%;
   font-weight: bold;
-  opacity: 0.8;
   font-family: "Amatic SC", cursive; }
   .horario__titulo {
     text-align: center;
@@ -276,6 +282,7 @@ button {
 .servicio {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   font-size: 1.1em;
   margin: 0.5em;
@@ -339,6 +346,8 @@ form {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  justify-content: left;
+  align-items: left;
   background-size: 80%;
   background-position: right top;
   margin: 3% 20%;
@@ -349,14 +358,14 @@ form {
   box-shadow: -35px 35px 68px 0px rgba(255, 221, 226, 0.5), inset 5px -5px 16px 0px rgba(255, 221, 226, 0.6), inset 0px 11px 28px 0px white; }
   form input.btn.btn-primary {
     --bs-btn-bg:#ffdde2;
-    --bs-btn-border-color: #ff8cc6;
+    --bs-btn-border-color:map-get($colors, primary ) ;
     --bs-btn-hover-bg: #ff8cc6;
-    --bs-btn-hover-border-color: #ffdde2 ;
+    --bs-btn-hover-border-color:  map-get($colors, secunday );
     --bs-btn-focus-shadow-rgb:(255,182,193);
-    --bs-btn-active-bg: #ff8cc6 ;
-    --bs-btn-active-border-color: #ff8cc6 ;
-    --bs-btn-disabled-bg: #ff8cc6 ;
-    --bs-btn-disabled-border-color: #ff8cc6 ;
+    --bs-btn-active-bg: map-get($colors, primary ) ;
+    --bs-btn-active-border-color:  map-get($colors, primary );
+    --bs-btn-disabled-bg: map-get($colors, primary ) ;
+    --bs-btn-disabled-border-color: map-get($colors, primary );
     font-size: 1.7em;
     font-family: "Amatic SC", cursive; }
 

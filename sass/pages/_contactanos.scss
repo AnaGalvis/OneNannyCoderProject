@@ -8,8 +8,7 @@ form {
     font-size: $text-small;
     background-image: url(../image/formImg.png);
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
+    @include flex(column, left, left);
     background-size: 80%;
     background-position: right top;
     margin: 3% 20%;
@@ -18,14 +17,14 @@ form {
 
         & input.btn.btn-primary{
         --bs-btn-bg:#ffdde2;
-        --bs-btn-border-color: #ff8cc6;
+        --bs-btn-border-color:map-get($colors, primary ) ;
         --bs-btn-hover-bg: #ff8cc6;
-        --bs-btn-hover-border-color: #ffdde2 ;
+        --bs-btn-hover-border-color:  map-get($colors, secunday );
         --bs-btn-focus-shadow-rgb:(255,182,193);
-        --bs-btn-active-bg: #ff8cc6 ;
-        --bs-btn-active-border-color: #ff8cc6 ;
-        --bs-btn-disabled-bg: #ff8cc6 ;
-        --bs-btn-disabled-border-color: #ff8cc6 ;
+        --bs-btn-active-bg: map-get($colors, primary ) ;
+        --bs-btn-active-border-color:  map-get($colors, primary );
+        --bs-btn-disabled-bg: map-get($colors, primary ) ;
+        --bs-btn-disabled-border-color: map-get($colors, primary );
         font-size: $text-midium;
         font-family:$font-title;
         }

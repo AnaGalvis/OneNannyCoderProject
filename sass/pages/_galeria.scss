@@ -1,5 +1,5 @@
 .gallery{
-    color: $text-color;
+    color: map-get($colors, text-color);
 
     &__text {
         font-size: $text-small;

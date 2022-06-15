@@ -11,7 +11,6 @@
     background-position: right;
     background-size: 20%;
     font-weight: bold;
-    opacity: 0.8;
     font-family: $font-title;
 
     &__titulo {
@@ -20,7 +19,7 @@
         font-weight: lighter;
         padding: 1.25em;
         margin: 10px;
-        color: #ff8cc6;
+        color: map-get($colors, primary );
         font-family: $font-title;
     }
     &__table {
@@ -43,7 +42,7 @@
     padding: 1rem;
     font-size: $text-midium;
     font-family: $font-title;
-    color: #ff8cc6;
+    color: map-get($colors, primary );
     text-align: center;
     font-weight: lighter;
 }

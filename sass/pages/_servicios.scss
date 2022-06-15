@@ -11,9 +11,7 @@
 }
 
 .servicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, center,center);
     font-size: $text-xsmall;
     margin:  0.5em;
     border: 2em;

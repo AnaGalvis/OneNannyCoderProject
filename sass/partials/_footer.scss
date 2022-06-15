@@ -11,16 +11,16 @@ footer {
 
     & h2 {
         text-align: start;
-        font-size: $text-midium;
+        font-size: $text-large;
     }
     & p a {
-        font-size: $text-midium;
+        font-size: $text-large;
         transition: all 0.6s ease-in-out;
-        color: #474849;
+        color: map-get($colors, text-color );
 
         &:hover{
-            font-size: $text-large;
-            color: #474849;
+            font-size: $text-xlarge;
+            color: map-get($colors, text-color );
         }
     }
 }

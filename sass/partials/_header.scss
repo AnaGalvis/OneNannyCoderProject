@@ -1,8 +1,5 @@
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flex (row, space-between, center);
     padding: 1.25rem;
     background-image: url(../image/ONheader.png);
     background-repeat: no-repeat;
@@ -42,8 +39,8 @@ ul li a {
     flex-wrap: wrap;
 
     &:hover{
-        border-bottom-color: $primary;
+        border-bottom-color: map-get($colors, primary );
         font-size: $text-midium;
-        color: #ff8cc6;
+        color: map-get($colors, primary);
     }
 }

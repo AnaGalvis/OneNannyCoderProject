@@ -92,7 +92,7 @@
         
     /* gallery */
     .gallery{
-        color: $text-color;
+        color: map-get($colors, text-color );
 
         &__container {
             display: grid;
