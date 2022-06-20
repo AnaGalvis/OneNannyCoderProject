@@ -10,6 +10,8 @@ main {
     font-size: $text-large;
     color: map-get($colors, primary );
     font-weight: lighter;
+    transition-duration: 2s;
+
 }   
 h2{
     font-family: $font-title;
@@ -82,6 +84,8 @@ justify-items: stretch;
     font-family: $font-title;
     font-weight: lighter;
     color: map-get($colors, primary );
+    transition-duration: 2s;
+
 }
 }
 /* End Grilla Index */
@@ -89,7 +93,7 @@ justify-items: stretch;
     background-color: #FFE156;
     margin: 40px auto;
     color: black;
-
+    transition-duration: 2s;
 
 }
 .seleccion {
@@ -124,10 +128,12 @@ text-align: center;
 .beneficios{
     display: flex;
     flex-direction: row;
+    transition-duration: 3s;
 
     
     ul{
         list-style: none;
+        transition-duration: 3s;
     }
 
     &__title{
@@ -146,15 +152,16 @@ text-align: center;
         
     }
     &__imagen{
- display: flex;
- flex-direction: row;
-
+    display: flex;
+    flex-direction: row;
+    transition-duration: 2s;
     }
 }
 .question{
 position: relative;
 @include flex( row, center, center);
 width: 100%;
+transition-duration: 2s;
 
 &__enlace{
     position: absolute;

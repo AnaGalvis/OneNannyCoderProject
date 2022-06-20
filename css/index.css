@@ -108,7 +108,8 @@ main {
     text-align: center;
     font-size: 2em;
     color: #ff8cc6;
-    font-weight: lighter; }
+    font-weight: lighter;
+    transition-duration: 2s; }
   main h2 {
     font-family: "Amatic SC", cursive;
     text-align: center;
@@ -164,13 +165,15 @@ main {
     font-size: 1.7em;
     font-family: "Amatic SC", cursive;
     font-weight: lighter;
-    color: #ff8cc6; }
+    color: #ff8cc6;
+    transition-duration: 2s; }
 
 /* End Grilla Index */
 .home__seleccion {
   background-color: #FFE156;
   margin: 40px auto;
-  color: black; }
+  color: black;
+  transition-duration: 2s; }
 
 .seleccion {
   font-size: 1.4em;
@@ -199,9 +202,11 @@ main {
 
 .beneficios {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  transition-duration: 3s; }
   .beneficios ul {
-    list-style: none; }
+    list-style: none;
+    transition-duration: 3s; }
   .beneficios__title {
     font-size: 3em;
     text-align: center;
@@ -216,7 +221,8 @@ main {
     align-items: flex-end; }
   .beneficios__imagen {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    transition-duration: 2s; }
 
 .question {
   position: relative;
@@ -224,7 +230,8 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  transition-duration: 2s; }
   .question__enlace {
     position: absolute;
     font-size: 80px;
