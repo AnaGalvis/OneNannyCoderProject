@@ -27,7 +27,6 @@
     ul li a:hover{
             color: black;
             font-weight: bolder;
-
         }
     
     /* inicio */
@@ -136,6 +135,33 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .seleccion {
+        font-size: $text-xsmall;
+        display: flex;
+        align-items: flex-start;
+        align-content: center;
+        text-align: center;
+        &__paso {
+            margin: 0.4em;
+            font-size: 0.9em;
+            width: 20%;
+        }
+        .iconify{
+            font-size: 50px;
+        }
+        }
+        .beneficios{
+            display: flex;
+            flex-direction: column;
+
+            &__imagen{
+                margin: 0, auto;
+                
+            }
+            
+           
+            }
+        
 
     .question__enlace{
         font-size: $text-large;
@@ -143,7 +169,7 @@
     .horario__table{
         font-size: $text-xsmall;
     }
-    }
+}
     
     /* Media Queries for mobile 480px-320px*/
     

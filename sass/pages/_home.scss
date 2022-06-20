@@ -85,25 +85,70 @@ justify-items: stretch;
 }
 }
 /* End Grilla Index */
+.home__seleccion{
+    background-color: #FFE156;
+    margin: 40px auto;
+    color: black;
 
+
+}
 .seleccion {
 font-size: $text-small;
-border-radius: 45px solid #ff8cc6;
-border: 3rem;
-padding: 2rem;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+align-content: center;
+text-align: center;
 &__title {
-    @extend .mis__titulos;
     padding: $xsmall-space;
+    color: black;
+    text-align: center;
+    font-size: $text-xlarge;
+    font-family: $font-title;
+
     }
 &__paso {
-    background: rgb(255,221,226);
-    background: radial-gradient(circle, rgba(255,221,226,1) 0%, rgba(255,140,198,1) 100%);
     margin: $xsmall-space;
-    padding: $xsmall-space;
-    list-style-position: inside;
     text-align: left;
-    border-radius: $xsmall-space;
+    font-size: $text-xsmall;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    align-content: stretch;
+    width: 20%;
+    }
+.iconify{
+    font-size: 90px;
+}
+}
+.beneficios{
+    display: flex;
+    flex-direction: row;
+
+    
+    ul{
+        list-style: none;
+    }
+
+    &__title{
+    font-size: $text-xlarge;
+    text-align: center;
+    font-family: $font-title;
+    color: map-get($colors, primary );
+    }
+    &__lista{
     font-size: $text-small;
+    font-family: $font-principal;
+    list-style: none;
+    color: map-get($colors, text-color);
+    display: flex;
+    align-items: flex-end;
+        
+    }
+    &__imagen{
+ display: flex;
+ flex-direction: row;
+
     }
 }
 .question{

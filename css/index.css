@@ -47,7 +47,7 @@ header {
   background-position: right top;
   background-size: contain;
   font-family: "Amatic SC", cursive;
-  font-size: 1.1em; }
+  font-size: 1em; }
   header nav {
     flex-basis: 75%;
     gap: 0.5rem; }
@@ -99,11 +99,11 @@ footer {
 
 /* Pages */
 main {
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: "Ibarra Real Nova", serif, light;
   margin: 0 auto;
   max-width: 1200px; }
-  main .mis__titulos, main .seleccion__title {
+  main .mis__titulos {
     font-family: "Amatic SC", cursive;
     text-align: center;
     font-size: 2em;
@@ -167,22 +167,56 @@ main {
     color: #ff8cc6; }
 
 /* End Grilla Index */
+.home__seleccion {
+  background-color: #FFE156;
+  margin: 40px auto;
+  color: black; }
+
 .seleccion {
   font-size: 1.4em;
-  border-radius: 45px solid #ff8cc6;
-  border: 3rem;
-  padding: 2rem; }
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: center;
+  text-align: center; }
   .seleccion__title {
-    padding: 0.5rem; }
-  .seleccion__paso {
-    background: #ffdde2;
-    background: radial-gradient(circle, #ffdde2 0%, #ff8cc6 100%);
-    margin: 0.5rem;
     padding: 0.5rem;
-    list-style-position: inside;
+    color: black;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Amatic SC", cursive; }
+  .seleccion__paso {
+    margin: 0.5rem;
     text-align: left;
-    border-radius: 0.5rem;
-    font-size: 1.4em; }
+    font-size: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    align-content: stretch;
+    width: 20%; }
+  .seleccion .iconify {
+    font-size: 90px; }
+
+.beneficios {
+  display: flex;
+  flex-direction: row; }
+  .beneficios ul {
+    list-style: none; }
+  .beneficios__title {
+    font-size: 3em;
+    text-align: center;
+    font-family: "Amatic SC", cursive;
+    color: #ff8cc6; }
+  .beneficios__lista {
+    font-size: 1.4em;
+    font-family: "Ibarra Real Nova", serif, light;
+    list-style: none;
+    color: #474849;
+    display: flex;
+    align-items: flex-end; }
+  .beneficios__imagen {
+    display: flex;
+    flex-direction: row; }
 
 .question {
   position: relative;
@@ -284,7 +318,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.1em;
+  font-size: 1em;
   margin: 0.5em;
   border: 2em;
   padding: 3em;
@@ -463,15 +497,32 @@ form {
       grid-row: 3/4; } }
 
 @media screen and (max-width: 600px) {
+  .seleccion {
+    font-size: 1em;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    text-align: center; }
+    .seleccion__paso {
+      margin: 0.4em;
+      font-size: 0.9em;
+      width: 20%; }
+    .seleccion .iconify {
+      font-size: 50px; }
+  .beneficios {
+    display: flex;
+    flex-direction: column; }
+    .beneficios__imagen {
+      margin: 0, auto; }
   .question__enlace {
     font-size: 2em; }
   .horario__table {
-    font-size: 1.1em; } }
+    font-size: 1em; } }
 
 /* Media Queries for mobile 480px-320px*/
 @media screen and (max-width: 500px) {
   body {
-    font-size: 1.1em; }
+    font-size: 1em; }
   .justify-content-end {
     font-size: 1.45em;
     width: 100%; }
@@ -507,7 +558,7 @@ form {
   table {
     margin: auto;
     padding: 0px;
-    font-size: 1.1em; }
+    font-size: 1em; }
   /*gallery*/
   .gallery__text {
     font-size: 1.4em;
