@@ -161,7 +161,7 @@ text-align: center;
 position: relative;
 @include flex( row, center, center);
 width: 100%;
-transition-duration: 2s;
+transition-duration:2s;
 
 &__enlace{
     position: absolute;
