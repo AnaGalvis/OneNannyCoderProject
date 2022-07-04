@@ -127,7 +127,7 @@ text-align: center;
 
     
     ul{
-        list-style: none;
+        list-style: circle;
         transition-duration: 3s;
     }
 
@@ -136,6 +136,7 @@ text-align: center;
     text-align: center;
     font-family: $font-title;
     color: map-get($colors, primary );
+    list-style: none;
     }
     &__lista{
     font-size: $text-small;

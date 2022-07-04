@@ -5,11 +5,12 @@
 }
 
 form {
+    color: black;
     font-size: $text-small;
     background-image: url(../image/formImg.png);
     background-repeat: no-repeat;
     @include flex(column, left, left);
-    background-size: 80%;
+    background-size: 70%;
     background-position: right top;
     margin: 3% 20%;
     padding: 2.5em 2.5rem 1.25rem 2.5rem;
@@ -25,7 +26,8 @@ form {
         --bs-btn-active-border-color:  map-get($colors, primary );
         --bs-btn-disabled-bg: map-get($colors, primary ) ;
         --bs-btn-disabled-border-color: map-get($colors, primary );
-        font-size: $text-midium;
+        font-size: $text-small;
         font-family:$font-title;
-        }
+        color: map-get($colors , text-color );
+    }
 } 
