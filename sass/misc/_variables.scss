@@ -1,7 +1,7 @@
 $colors:(
    primary: #ff8cc6,
    Secunday: #ffdde2,
-   text-color:#474849 
+   text-color:#121212 
 );
 @each $color, $value in $colors{
    #{$color}{
@@ -11,7 +11,7 @@ $colors:(
 
  /* Font-Family*/
     $font-title: 'Amatic SC', cursive;
-    $font-principal: 'Ibarra Real Nova', serif, light;
+    $font-principal:'Arima', cursive, bolder;
 
  /* Font sizes */
     $text-xlarge: 3em;

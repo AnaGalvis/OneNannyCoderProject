@@ -17,8 +17,8 @@
         text-align: center;
         font-size: $text-large;
         font-weight: lighter;
-        padding: 1.25em;
-        margin: 10px;
+        padding: 1rem;
+        margin: 0.8rem;
         color: map-get($colors, primary );
         font-family: $font-title;
     }
@@ -38,13 +38,14 @@
 
 
 .testimonios{
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 1rem;
     font-size: $text-midium;
     font-family: $font-title;
     color: map-get($colors, primary );
     text-align: center;
     font-weight: lighter;
+    margin: 1rem 0 0;
 }
 .carousel{
     margin: auto;

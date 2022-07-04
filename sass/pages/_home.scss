@@ -7,7 +7,7 @@ main {
 .mis__titulos{
     font-family: $font-title;
     text-align: center;
-    font-size: $text-large;
+    font-size: $text-xlarge;
     color: map-get($colors, primary );
     font-weight: lighter;
     transition-duration: 2s;
@@ -18,7 +18,6 @@ h2{
     text-align: center;
     font-size: $text-midium;
     padding: .625rem 1.25rem;
-    margin: $small-space;
     color: map-get($colors, primary );
     font-weight: lighter;
 }
@@ -84,7 +83,6 @@ justify-items: stretch;
     font-family: $font-title;
     font-weight: lighter;
     color: map-get($colors, primary );
-    transition-duration: 2s;
 
 }
 }
@@ -93,8 +91,6 @@ justify-items: stretch;
     background-color: #FFE156;
     margin: 40px auto;
     color: black;
-    transition-duration: 2s;
-
 }
 .seleccion {
 font-size: $text-small;
@@ -128,7 +124,6 @@ text-align: center;
 .beneficios{
     display: flex;
     flex-direction: row;
-    transition-duration: 3s;
 
     
     ul{
@@ -161,7 +156,6 @@ text-align: center;
 position: relative;
 @include flex( row, center, center);
 width: 100%;
-transition-duration:2s;
 
 &__enlace{
     position: absolute;
